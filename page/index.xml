@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Hhui</title>
+        <link>http://badhhui.gitee.io/page/</link>
+        <description>Recent content in Pages on Hhui</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://badhhui.gitee.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>归档</title>
+        <link>http://badhhui.gitee.io/archives/</link>
+        <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+        
+        <guid>http://badhhui.gitee.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>关于</title>
+        <link>http://badhhui.gitee.io/%E5%85%B3%E4%BA%8E/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://badhhui.gitee.io/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;p&gt;男，00后，本科：南昌大学软件工程，硕士：重庆大学计算机，研究方向为操作系统、存储系统。&lt;/p&gt;
+&lt;p&gt;有问题可留言或邮件联系，邮件地址：&lt;a class=&#34;link&#34; href=&#34;mailto:hhui@cqu.edu.cn&#34; &gt;hhui@cqu.edu.cn&lt;/a&gt;，可联系我添加友链！&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>http://badhhui.gitee.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://badhhui.gitee.io/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

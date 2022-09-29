@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='前言 由于最近完成了毕业论文，比较清闲，于是想起了我之前还有个博客，之前用的是另一个主题，内容很丰富，也十分臃肿，在访问时也特别缓慢，所以决定重新开始搭建，搭建完成之后刚好可以记录下来，以便日后参考。
+1.安装Hexo Hexo是一个开源的博客框架，可以不需要编写代码就能生成一个博客，而且还有各种主题，本人十分推荐。 首先，你需要先安装node.js以及git，安装最新版即可，若下载缓慢，在文末有本文所需的所有软件的网盘链接。安装完成之后打开命令行工具执行以下命令：
+1 npm install -g hexo-cli 新建一个文件夹，名字随意，最好为英文名称，这里我在D盘下新建了一个blog文件夹，打开命令行，执行：
+1 2 3 npx hexo init D:/blog/ cd D:/blog/ npm install 然后你就可以在blog文件夹下看到你的博客项目了，后续进行一些配置即可。
+2.安装主题 Hexo提供了很多主题，我们可以根据自己的喜好自由选择，打开Hexo的[主题](Themes | Hexo)页面，可以看到很多主题：
+这里我选择的是fluid主题，每个主题的配置不同，他们都会提供参考文档，以fluid为例，安装这个主题。
+首先在打开命令行工具，切换到刚刚的blog目录，执行以下命令：
+1 git clone https://github.com/fluid-dev/hexo-theme-fluid.git themes/fluid 执行完成之后，在blog的themes文件夹下就能看到fluid目录。
+打开blog文件夹下的**_config.yml**（注意是blog文件夹下的，而不是刚刚创建的），往下滚动找到thtmt属性，后面加上pteris并保存，如：
+1 theme: fluid 主题还可以进行很多配置，具体配置请参考主题的官方文档。
+3.本地运行 完成以上操作之后，打开命令行，切换到blog文件夹路径，执行以下命令即可在本地浏览器预览：
+1 hexo server 正常运行结果如下：
+1 2 3 4 PS D:\blog&amp;gt; hexo server INFO Validating config INFO Start processing INFO Hexo is running at http://localhost:4000 . Press Ctrl&#43;C to stop.'><title>使用Hexo从零开始搭建一个博客</title>
+
+<link rel='canonical' href='http://badhhui.gitee.io/p/%E4%BD%BF%E7%94%A8hexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/'>
+
+<link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css"><meta property='og:title' content='使用Hexo从零开始搭建一个博客'>
+<meta property='og:description' content='前言 由于最近完成了毕业论文，比较清闲，于是想起了我之前还有个博客，之前用的是另一个主题，内容很丰富，也十分臃肿，在访问时也特别缓慢，所以决定重新开始搭建，搭建完成之后刚好可以记录下来，以便日后参考。
+1.安装Hexo Hexo是一个开源的博客框架，可以不需要编写代码就能生成一个博客，而且还有各种主题，本人十分推荐。 首先，你需要先安装node.js以及git，安装最新版即可，若下载缓慢，在文末有本文所需的所有软件的网盘链接。安装完成之后打开命令行工具执行以下命令：
+1 npm install -g hexo-cli 新建一个文件夹，名字随意，最好为英文名称，这里我在D盘下新建了一个blog文件夹，打开命令行，执行：
+1 2 3 npx hexo init D:/blog/ cd D:/blog/ npm install 然后你就可以在blog文件夹下看到你的博客项目了，后续进行一些配置即可。
+2.安装主题 Hexo提供了很多主题，我们可以根据自己的喜好自由选择，打开Hexo的[主题](Themes | Hexo)页面，可以看到很多主题：
+这里我选择的是fluid主题，每个主题的配置不同，他们都会提供参考文档，以fluid为例，安装这个主题。
+首先在打开命令行工具，切换到刚刚的blog目录，执行以下命令：
+1 git clone https://github.com/fluid-dev/hexo-theme-fluid.git themes/fluid 执行完成之后，在blog的themes文件夹下就能看到fluid目录。
+打开blog文件夹下的**_config.yml**（注意是blog文件夹下的，而不是刚刚创建的），往下滚动找到thtmt属性，后面加上pteris并保存，如：
+1 theme: fluid 主题还可以进行很多配置，具体配置请参考主题的官方文档。
+3.本地运行 完成以上操作之后，打开命令行，切换到blog文件夹路径，执行以下命令即可在本地浏览器预览：
+1 hexo server 正常运行结果如下：
+1 2 3 4 PS D:\blog&amp;gt; hexo server INFO Validating config INFO Start processing INFO Hexo is running at http://localhost:4000 . Press Ctrl&#43;C to stop.'>
+<meta property='og:url' content='http://badhhui.gitee.io/p/%E4%BD%BF%E7%94%A8hexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/'>
+<meta property='og:site_name' content='Hhui'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-05-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-05-12T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="使用Hexo从零开始搭建一个博客">
+<meta name="twitter:description" content="前言 由于最近完成了毕业论文，比较清闲，于是想起了我之前还有个博客，之前用的是另一个主题，内容很丰富，也十分臃肿，在访问时也特别缓慢，所以决定重新开始搭建，搭建完成之后刚好可以记录下来，以便日后参考。
+1.安装Hexo Hexo是一个开源的博客框架，可以不需要编写代码就能生成一个博客，而且还有各种主题，本人十分推荐。 首先，你需要先安装node.js以及git，安装最新版即可，若下载缓慢，在文末有本文所需的所有软件的网盘链接。安装完成之后打开命令行工具执行以下命令：
+1 npm install -g hexo-cli 新建一个文件夹，名字随意，最好为英文名称，这里我在D盘下新建了一个blog文件夹，打开命令行，执行：
+1 2 3 npx hexo init D:/blog/ cd D:/blog/ npm install 然后你就可以在blog文件夹下看到你的博客项目了，后续进行一些配置即可。
+2.安装主题 Hexo提供了很多主题，我们可以根据自己的喜好自由选择，打开Hexo的[主题](Themes | Hexo)页面，可以看到很多主题：
+这里我选择的是fluid主题，每个主题的配置不同，他们都会提供参考文档，以fluid为例，安装这个主题。
+首先在打开命令行工具，切换到刚刚的blog目录，执行以下命令：
+1 git clone https://github.com/fluid-dev/hexo-theme-fluid.git themes/fluid 执行完成之后，在blog的themes文件夹下就能看到fluid目录。
+打开blog文件夹下的**_config.yml**（注意是blog文件夹下的，而不是刚刚创建的），往下滚动找到thtmt属性，后面加上pteris并保存，如：
+1 theme: fluid 主题还可以进行很多配置，具体配置请参考主题的官方文档。
+3.本地运行 完成以上操作之后，打开命令行，切换到blog文件夹路径，执行以下命令即可在本地浏览器预览：
+1 hexo server 正常运行结果如下：
+1 2 3 4 PS D:\blog&amp;gt; hexo server INFO Validating config INFO Start processing INFO Hexo is running at http://localhost:4000 . Press Ctrl&#43;C to stop.">
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "light");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu5f78fa2c2fdc9b8cb667ef9d1f65bc87_12555_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🤠</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Hhui</a></h1>
+            <h2 class="site-description">东隅已逝，桑榆非晚。</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="486198839"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1653061244900" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7861" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><defs><style type="text/css">@font-face { font-family: feedback-iconfont; src: url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.woff2?t=1630033759944") format("woff2"), url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.woff?t=1630033759944") format("woff"), url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.ttf?t=1630033759944") format("truetype"); }
+</style></defs><path d="M681.398108 955.388343c-12.612249 0-25.286919-1.066285-37.662785-3.184529-46.306652-7.890714-85.020372-27.357068-110.574375-55.326073-13.866822 4.612041-30.149671 3.090385-40.314171-0.156566-25.428136 29.569456-69.412906 50.039673-120.691803 55.623855-90.809215 9.834996-162.810063-20.659529-169.994696-69.412906-5.945409-39.812751 36.408211-71.075779 81.820494-89.130993-19.921725-24.988114-35.106566-53.930283-43.74941-83.200934-24.722054 29.67895-45.977147 48.581462-70.087265 42.760896-8.03193-1.913583-19.326161-7.937786-27.624151-25.75764-16.439414-35.231409-16.078187-108.393709 16.972557-174.558641 13.364379-26.761504 32.000831-48.690956 47.529503-65.742307-5.881964-12.548804-11.576663-27.748994-11.576663-41.22389 0-22.274306 9.725502-41.694611 28.251438-56.691163-1.662873-12.706393-2.463098-24.424272-2.463098-35.560914 0-161.100118 127.98593-287.297308 291.376207-287.297308 161.695682 0 293.242717 128.880299 293.242717 287.297308l0.047072 7.843642c0.062422 8.126075 0.141216 17.004279-0.376577 25.505907 15.184841 11.105942 24.251334 26.729781 24.251334 58.902528 0 13.505595-1.160429 27.937283-7.921413 39.216163 13.035898 18.478863 27.38879 41.349757 40.314171 61.945841l2.77623 4.423753c31.027667 49.397037 34.165124 135.405923 16.156982 176.441525-8.079002 18.400069-19.043728 23.984251-26.839275 25.428136-3.670599 0.674359-7.199982 0.988514-10.604522 0.988514 0 0 0 0-0.01535 0-27.13808 0-45.003983-18.85544-60.659545-41.003879-9.459442 28.28316-24.612561 57.145511-42.400692 80.455403 53.082986 21.741163 80.707137 52.173267 76.518744 85.255733C811.628148 922.635381 753.289462 955.388343 681.398108 955.388343zM541.883611 856.015078l8.659217 11.544941c20.062941 26.745131 55.075363 45.553499 98.589412 52.988842 10.588149 1.787716 21.458731 2.713808 32.266891 2.713808 57.616232 0 100.958366-25.333992 103.82874-48.063669 2.51017-19.765159-27.65485-42.839691-76.831876-58.793034l-24.502044-7.953136 17.929348-18.510586c28.658713-29.569456 52.643987-78.05575 58.337663-117.883851l5.851265-40.910759 32.251541 47.529503c15.403828 23.466458 28.705785 43.718711 45.38056 43.718711 0.01535 0 0.01535 0 0.01535 0 1.537006 0 3.121084-0.156566 4.768607-0.455371 11.231809-8.203846 22.902616-99.70277-10.682293-153.178705l-2.792603-4.439102c-15.247262-24.313755-32.533974-51.859112-46.604434-70.510914l-10.541077-13.960966 14.808264-9.318226c4.376681-2.76088 5.03569-16.501836 5.03569-24.454972 0-27.059286-6.760984-30.918173-16.98893-36.737716l-9.474792-5.395894 1.521656-10.80816c1.254573-8.94165 1.160429-20.769023 1.066285-31.184233l-0.047072-8.126075c0-140.707672-117.130697-255.171634-261.117043-255.171634-145.366785 0-259.250532 112.079658-259.250532 255.171634 0 12.251022 1.12973 25.458835 3.482311 40.361243l1.600451 10.290367-8.721639 5.662977c-14.902408 9.710153-22.149463 21.458731-22.149463 35.93749 0 7.670703 4.376681 19.968797 13.004175 36.564777l5.207605 10.007935-7.670703 8.29799c-16.188704 17.505699-36.314067 39.294958-49.883107 66.447365-26.776853 53.616128-29.616528 117.522624-16.894785 145.978722 2.964518 6.65149 5.693676 8.580422 6.274914 8.736988 0.031722 0 0.062422 0 0.109494 0 11.827373 0 31.278377-23.906479 50.086745-47.043433l33.098839-40.392966 4.203742 37.882795c4.454452 40.329521 26.776853 85.272106 58.228169 117.318986l18.697851 19.043728-25.584702 7.608282c-50.071396 14.870686-85.538165 41.380456-82.511225 61.695131 4.297886 29.349445 65.506946 49.726541 134.731564 42.180681 47.859008-5.207605 87.295182-24.674982 105.476263-52.079122l5.082762-7.655354 12.423961 0.674359 4.220115 2.007727c4.314259 2.086521 21.019733 7.576559 33.600259 0.047072L541.883611 856.015078z" p-id="7862"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:hhui@cqu.edu.cn'
+                        target="_blank"
+                        title="给我发邮件"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1653060705289" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3491" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><defs><style type="text/css">@font-face { font-family: feedback-iconfont; src: url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.woff2?t=1630033759944") format("woff2"), url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.woff?t=1630033759944") format("woff"), url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.ttf?t=1630033759944") format("truetype"); }
+</style></defs><path d="M838.954667 234.666667H170.666667c-3.626667 0-7.168 0.448-10.56 1.322666l323.690666 323.669334a21.333333 21.333333 0 0 0 30.165334 0L838.954667 234.666667z m46.144 14.186666l-260.693334 260.693334 262.933334 262.912c5.44-7.168 8.661333-16.106667 8.661333-25.792V277.333333c0-10.944-4.117333-20.906667-10.88-28.48zM843.861333 789.333333l-249.6-249.621333-50.133333 50.133333a64 64 0 0 1-90.517333 0l-50.112-50.133333L156.373333 786.88c4.48 1.578667 9.28 2.453333 14.314667 2.453333h673.194667zM128.661333 754.218667L373.333333 509.525333 129.578667 265.813333A42.709333 42.709333 0 0 0 128 277.333333v469.333334c0 2.56 0.213333 5.098667 0.661333 7.552zM170.666667 192h682.666666a85.333333 85.333333 0 0 1 85.333334 85.333333v469.333334a85.333333 85.333333 0 0 1-85.333334 85.333333H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333333V277.333333a85.333333 85.333333 0 0 1 85.333334-85.333333z" fill="#2c2c2c" p-id="3492"></path></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/" style="background-color: #2a9d8f; color: #fff;">
+                教程分享
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E4%BD%BF%E7%94%A8hexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">使用Hexo从零开始搭建一个博客</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 12, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="前言">前言</h2>
+<p>由于最近完成了毕业论文，比较清闲，于是想起了我之前还有个博客，之前用的是另一个主题，内容很丰富，也十分臃肿，在访问时也特别缓慢，所以决定重新开始搭建，搭建完成之后刚好可以记录下来，以便日后参考。</p>
+<!-- raw HTML omitted -->
+<h2 id="1安装hexo">1.安装Hexo</h2>
+<p><a class="link" href="[Hexo]%28https://hexo.io/zh-cn/%29" >Hexo</a>是一个开源的博客框架，可以不需要编写代码就能生成一个博客，而且还有各种主题，本人十分推荐。
+首先，你需要先安装<a class="link" href="http://nodejs.cn/download/"  target="_blank" rel="noopener"
+    >node.js</a>以及<a class="link" href="https://git-scm.com/downloads"  target="_blank" rel="noopener"
+    >git</a>，安装最新版即可，若下载缓慢，在文末有本文所需的所有软件的网盘链接。安装完成之后打开命令行工具执行以下命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g hexo-cli
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>新建一个文件夹，名字随意，最好为英文名称，这里我在D盘下新建了一个blog文件夹，打开命令行，执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npx hexo init D:/blog/
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> D:/blog/
+</span></span><span class="line"><span class="cl">npm install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后你就可以在blog文件夹下看到你的博客项目了，后续进行一些配置即可。</p>
+<h2 id="2安装主题">2.安装主题</h2>
+<p>Hexo提供了很多主题，我们可以根据自己的喜好自由选择，打开Hexo的[主题](<a class="link" href="https://hexo.io/themes/"  target="_blank" rel="noopener"
+    >Themes | Hexo</a>)页面，可以看到很多主题：</p>
+<p><a class="link" href="https://imgtu.com/i/OBwNiq"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/12/OBwNiq.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="OBwNiq.png"
+	
+	
+></a></p>
+<p>这里我选择的是<a class="link" href="https://github.com/fluid-dev/hexo-theme-fluid"  target="_blank" rel="noopener"
+    >fluid</a>主题，每个主题的配置不同，他们都会提供参考文档，以fluid为例，安装这个主题。</p>
+<p>首先在打开命令行工具，切换到刚刚的blog目录，执行以下命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/fluid-dev/hexo-theme-fluid.git themes/fluid
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行完成之后，在blog的themes文件夹下就能看到fluid目录。</p>
+<p>打开<strong>blog</strong>文件夹下的**_config.yml**（注意是blog文件夹下的，而不是刚刚创建的），往下滚动找到thtmt属性，后面加上pteris并保存，如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l">fluid</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>主题还可以进行很多配置，具体配置请参考主题的<a class="link" href="https://hexo.fluid-dev.com/docs/guide/"  target="_blank" rel="noopener"
+    >官方文档</a>。</p>
+<h2 id="3本地运行">3.本地运行</h2>
+<p>完成以上操作之后，打开命令行，切换到blog文件夹路径，执行以下命令即可在本地浏览器预览：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>正常运行结果如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">PS D:<span class="se">\b</span>log&gt; hexo server
+</span></span><span class="line"><span class="cl">INFO  Validating config
+</span></span><span class="line"><span class="cl">INFO  Start processing
+</span></span><span class="line"><span class="cl">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>按照给出的网址，在浏览器中打开即可看到自己的博客，如图：<a class="link" href="https://imgtu.com/i/OshWHs"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/13/OshWHs.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="OshWHs.png"
+	
+	
+></a></p>
+<h2 id="4托管到gitee">4.托管到Gitee</h2>
+<p>在文件夹中右键<code>git Bash Here</code>中输入下面的两个命令进行配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name gitee用户名
+</span></span><span class="line"><span class="cl">git config --global user.email 你的邮箱
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后在本地生成SSH密钥，运行以下命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -C 你的邮箱
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后一路回车，之后就能在C:\Users\你的电脑用户名\.ssh目录下看到两个密钥文件，打开id_rsa.pub这个文件，复制里面的内容，打开<a class="link" href="https://gitee.com/"  target="_blank" rel="noopener"
+    >Gitee</a>官网，登录你的账号，没有就注册一个，登录之后，点击头像的下拉图标，点击设置。</p>
+<p><a class="link" href="https://imgtu.com/i/Os5pon"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/13/Os5pon.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Os5pon.png"
+	
+	
+></a></p>
+<p>点击SSH公钥。</p>
+<p><a class="link" href="https://imgtu.com/i/Os5noR"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/13/Os5noR.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Os5noR.png"
+	
+	
+></a></p>
+<p>添加一个公钥，标题随意，将刚刚复制的公钥文件粘贴到公钥输入框中，点击确定即可。</p>
+<p><a class="link" href="https://imgtu.com/i/Os5YeH"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/13/Os5YeH.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Os5YeH.png"
+	
+	
+></a></p>
+<p>回到主页新建一个仓库，名字随意，仓库类型设置为开源。</p>
+<p><a class="link" href="https://imgtu.com/i/Os44qH"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/13/Os44qH.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Os44qH.png"
+	
+	
+></a></p>
+<p>新建仓库之后打开仓库，复制仓库的SSH链接。</p>
+<p><a class="link" href="https://imgtu.com/i/Os5Xfx"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/13/Os5Xfx.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Os5Xfx.png"
+	
+	
+></a></p>
+<p>打开博客的配置文件**_config.yml**，往下拉找到deploy字段，设置为以下格式然后保存：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">deploy: 
+</span></span><span class="line"><span class="cl">  type: git
+</span></span><span class="line"><span class="cl">  repo: 刚刚复制的仓库SSH链接
+</span></span><span class="line"><span class="cl">  branch: master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在blog文件夹下打开git bash界面，运行以下命令即可将博客托管到刚刚新建的仓库：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo clean
+</span></span><span class="line"><span class="cl">hexo g
+</span></span><span class="line"><span class="cl">hexo d
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>打开gitee，找到刚刚新建的仓库，点击服务—Gitee Pages，身份验证之后，勾选强制使用Https，然后启用即可。</p>
+<p><a class="link" href="https://imgtu.com/i/OsoSCq"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/13/OsoSCq.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="OsoSCq.png"
+	
+	
+></a></p>
+<p><a class="link" href="https://imgtu.com/i/OsoVa9"  target="_blank" rel="noopener"
+    ><img src="https://s1.ax1x.com/2022/05/13/OsoVa9.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="OsoVa9.png"
+	
+	
+></a></p>
+<p>访问生成的网站地址即可在浏览器中看到你的博客。</p>
+<h2 id="5本文用到的软件网盘地址及网站链接">5.本文用到的软件网盘地址及网站链接</h2>
+<p>见文章末尾</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+        <div class="article-list--compact links">
+    
+        <article>
+            <a href="https://pan.baidu.com/s/1LEOP9w11YjthQw9pgwzSng?pwd=czkn" target="_blank" rel="noopener">
+                <div class="article-details">
+                    <h2 class="article-title">百度网盘</h2>
+                    <footer class="article-time">
+                        
+                            软件下载链接
+                        
+                    </footer>
+                </div>
+        
+                
+                    <div class="article-image">
+                        <img src="baidunetdisk.jpeg" loading="lazy">
+                    </div>
+                
+            </a>
+        </article>
+    
+        <article>
+            <a href="https://imgtu.com/" target="_blank" rel="noopener">
+                <div class="article-details">
+                    <h2 class="article-title">图床</h2>
+                    <footer class="article-time">
+                        
+                            博客里的图片存储用的图床
+                        
+                    </footer>
+                </div>
+        
+                
+                    <div class="article-image">
+                        <img src="logo_1614099229349_999319.png" loading="lazy">
+                    </div>
+                
+            </a>
+        </article>
+    
+        <article>
+            <a href="https://ghproxy.com/" target="_blank" rel="noopener">
+                <div class="article-details">
+                    <h2 class="article-title">Github下载加速</h2>
+                    <footer class="article-time">
+                        
+                            Github下载加速
+                        
+                    </footer>
+                </div>
+        
+                
+                    <div class="article-image">
+                        <img src="github.png" loading="lazy">
+                    </div>
+                
+            </a>
+        </article>
+    
+</div>
+    
+
+    
+
+     
+    
+        
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"locale":{"admin":"Admin"},"requiredMeta":["name","email"],"serverURL":"https://waline-blog-crpw5o2p1-badhhui.vercel.app/"});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 Hhui
+    </section>
+    
+    <section class="powerby">
+        
+            hello world! <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#1安装hexo">1.安装Hexo</a></li>
+    <li><a href="#2安装主题">2.安装主题</a></li>
+    <li><a href="#3本地运行">3.本地运行</a></li>
+    <li><a href="#4托管到gitee">4.托管到Gitee</a></li>
+    <li><a href="#5本文用到的软件网盘地址及网站链接">5.本文用到的软件网盘地址及网站链接</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

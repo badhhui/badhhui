@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on Hhui</title>
+        <link>http://badhhui.gitee.io/categories/</link>
+        <description>Recent content in Categories on Hhui</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 12 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://badhhui.gitee.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>教程分享</title>
+        <link>http://badhhui.gitee.io/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/</link>
+        <pubDate>Thu, 12 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>http://badhhui.gitee.io/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/</guid>
+        <description>&lt;img src="http://badhhui.gitee.io/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post 教程分享" /&gt;</description>
+        </item>
+        <item>
+        <title>学习笔记</title>
+        <link>http://badhhui.gitee.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://badhhui.gitee.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="http://badhhui.gitee.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/31d6879325ec502205ee2e5b52fdecc2.jpeg" alt="Featured image of post 学习笔记" /&gt;</description>
+        </item>
+        <item>
+        <title>阅读笔记</title>
+        <link>http://badhhui.gitee.io/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>http://badhhui.gitee.io/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="http://badhhui.gitee.io/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/31d6879325ec502205ee2e5b52fdecc2.jpeg" alt="Featured image of post 阅读笔记" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
